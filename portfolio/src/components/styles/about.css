@@ -1,0 +1,161 @@
+/* General styles for About page */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Background gradient */
+    min-height: 100vh; /* Ensure background covers the entire viewport height */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.about h1 {
+    margin: 0;
+    font-size: 3rem; /* Header size */
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffeb3b; /* Header color */
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f1f1f1; /* Paragraph color */
+    max-width: 800px;
+    padding: 0 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1s ease-in-out forwards 0.5s; /* Fade-in slide-up animation */
+}
+
+/* Card container and card styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 20px; /* Ensure padding is applied */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.2s ease;
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Logo image styling */
+.card img {
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Add spacing around the image */
+}
+
+/* Icon container styles */
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 30px; /* Space above the icons */
+    padding: 0 20px; /* Ensure padding is applied */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+.icons img {
+    width: 50px; /* Set size of icons */
+    height: 50px; /* Ensure icons are square */
+    object-fit: cover; /* Ensure icons maintain aspect ratio */
+    transition: transform 0.2s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Reuse animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .icons img {
+        width: 40px; /* Adjust size for smaller screens */
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .icons img {
+        width: 30px; /* Further adjust size for very small screens */
+        height: 30px;
+    }
+
+    .about {
+        padding: 0 10px;
+    }
+}

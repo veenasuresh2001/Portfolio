@@ -1,0 +1,93 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tiktactoe {
+    background: white;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tiktactoe h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.tiktactoe img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.tiktactoe p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.tiktactoe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .projects h1 {
+        font-size: 2rem;
+    }
+
+    .tiktactoe {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects h1 {
+        font-size: 1.5rem;
+    }
+
+    .tiktactoe {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tiktactoe img {
+        margin-bottom: 5px;
+    }
+
+    .tiktactoe p {
+        font-size: 0.9rem;
+    }
+}
