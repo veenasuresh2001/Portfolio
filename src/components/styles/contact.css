@@ -1,0 +1,124 @@
+/* contact.css */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    color: #ffeb3b;
+}
+
+form {
+    background: white;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 600px;
+    text-align: left;
+    position: relative;
+}
+
+form label {
+    font-size: 1rem;
+    margin-left: 250px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #ffeb3b;
+    color: #333;
+    border: none;
+    margin-left: 260px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #fdd835;
+}
+
+form .social {
+    margin-top: 20px;
+    margin-left: 210px;
+}
+
+
+
+form .social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+form .social img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    form .social img {
+        width: 30px;
+        height: 30px;
+    }
+}
