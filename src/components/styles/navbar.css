@@ -16,7 +16,8 @@ body {
     align-items: center;
     padding: 20px 30px;
     background-color: #333;
-    position: relative;
+    position: sticky;  /* Makes the navbar sticky */
+    top: 0;  /* Sticks the navbar to the top */
     z-index: 100;
     color: white;
 }
@@ -71,7 +72,7 @@ body {
     color: white;
     font-size: 30px;
     cursor: pointer;
-  }
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -84,7 +85,8 @@ body {
     .hamburger {
         display: block;
         color: white;
-      }
+    }
+
     /* Navigation Links on mobile */
     .nav-links {
         display: none;  /* Hide nav links by default */

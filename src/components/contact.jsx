@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import '../components/styles/contact.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import insta from '../components/styles/instagram.png';
 import github from '../components/styles/github.png';
 import linkedin from '../components/styles/linkedin.png';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -13,6 +14,9 @@ export default function Contact() {
         message: ''
     });
 
+    const form = useRef();
+
+    // Handle input changes to update formData
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -21,20 +25,28 @@ export default function Contact() {
         });
     };
 
-    const submit = (e) => {
-        e.preventDefault(); 
-            if (formData.name && formData.email && formData.message) {
-            toast.success('Your message has been sent successfully');
-            setFormData({ name: '', email: '', message: '' });
-        } else {
-            toast.error('Please fill in all fields');
-        }
+    // Handle form submission
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        // Send email using EmailJS
+        emailjs
+            .sendForm("service_f9as38x", "template_t4gijul", form.current, "QnSbXN02czYtadT44")
+            .then(
+                () => {
+                    toast.success("Message sent");
+                    setFormData({ name: '', email: '', message: '' }); // Clear form after submission
+                },
+                (error) => {
+                    toast.error("Failed to send", error.text);
+                }
+            );
     };
 
     return (
         <>
             <div className="contact">
-                <form onSubmit={submit}>
+                <form ref={form} onSubmit={sendEmail}>
                     <h1>Contact Me</h1>
                     <label>Your Name</label>
                     <input

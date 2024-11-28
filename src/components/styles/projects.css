@@ -4,10 +4,11 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: #6e8efb;
     color: white;
     font-family: 'Arial', sans-serif;
     text-align: center;
+    padding-top: 60px;
 }
 
 .projects h1 {
@@ -18,48 +19,39 @@
 
 .games {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 50px;
+    flex-wrap: wrap;
 }
 
 .tiktactoe {
-    background: white;
-    color: #333;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 300px;
+    width: 30%;
     text-align: left;
     padding: 20px;
     position: relative;
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    background-color: white; /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a raised look */
 }
 
 .tiktactoe h1 {
     font-size: 1.5rem;
-    color: #333;
+    color: black;
     margin: 0;
     margin-bottom: 10px;
 }
 
 .tiktactoe img {
     width: 100%;
-    height: auto;
+    height: 250px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image covers the area while maintaining its aspect ratio */
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
-}
-
-.tiktactoe p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.tiktactoe:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive Styles */
@@ -69,7 +61,7 @@
     }
 
     .tiktactoe {
-        width: 90%;
+        width: 45%;
     }
 }
 

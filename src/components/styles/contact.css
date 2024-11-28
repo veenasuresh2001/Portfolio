@@ -1,23 +1,27 @@
-/* contact.css */
+/* Base Styles */
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: #6e8efb;
     color: white;
     font-family: 'Arial', sans-serif;
     text-align: center;
+    padding-top: 150px;
 }
 
 .contact h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    margin-left: 170px;
+    display: flex;
+    justify-content: center;
     color: #ffeb3b;
+    
 }
 
+/* Form Styles */
 form {
     background: white;
     color: #333;
@@ -27,24 +31,24 @@ form {
     width: 600px;
     text-align: left;
     position: relative;
+    margin-top: 20px;
 }
 
 form label {
     font-size: 1rem;
-    margin-left: 250px;
     margin-bottom: 5px;
     display: block;
 }
 
 form input,
 form textarea {
-    width: 500px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    margin-left: 40px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 form textarea {
@@ -56,24 +60,23 @@ form button {
     background-color: #ffeb3b;
     color: #333;
     border: none;
-    margin-left: 260px;
     padding: 10px 20px;
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 form button:hover {
     background-color: #fdd835;
 }
 
+/* Social Media Section */
 form .social {
     margin-top: 20px;
-    margin-left: 210px;
+    text-align: center;
 }
-
-
 
 form .social a {
     margin: 0 10px;
@@ -86,25 +89,52 @@ form .social img {
     vertical-align: middle;
 }
 
-/* Responsive Styles */
+/* Responsive Styles for tablets (max-width: 768px) */
 @media (max-width: 768px) {
     .contact h1 {
         font-size: 2rem;
+        margin-left: 0;
     }
 
     form {
-        width: 90%;
+        width: 80%;
+        padding: 20px;
+    }
+
+    form label {
+        margin-left: 0;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    form button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    form .social {
+        text-align: center;
+    }
+
+    form .social a {
+        margin: 0 8px;
     }
 }
 
+/* Responsive Styles for small screens (max-width: 480px) */
 @media (max-width: 480px) {
     .contact h1 {
         font-size: 1.5rem;
     }
 
     form {
-        width: 100%;
-        padding: 10px;
+        width: 90%;
+        padding: 15px;
     }
 
     form input,
