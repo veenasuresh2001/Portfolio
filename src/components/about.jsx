@@ -13,7 +13,7 @@ export default function About() {
         <>
             <div className="about">
                 <h1>ABOUT ME</h1>
-                <p>I'm a self-taught Full Stack developer who loves creating beautiful and functional websites. I’m always eager to learn new techniques and technologies to improve my skills and deliver exceptional web experiences. With experience in the MERN stack (MongoDB, Express, React, Node.js), I specialize in building dynamic, high-performance web applications. I have a strong focus on both frontend and backend development, ensuring seamless integration and an intuitive user experience. I'm passionate about writing clean, maintainable code and collaborating with teams to bring ideas to life. I continuously explore new technologies to stay ahead of trends and deliver innovative solutions.</p>
+                <p>I'm a self-taught Full Stack developer who loves creating beautiful and functional websites. I’m always eager to learn new techniques and technologies to improve my skills and deliver exceptional web experiences. With experience in the MERN stack, I specialize in building dynamic, high-performance web applications. I have a strong focus on both frontend and backend development, ensuring seamless integration and an intuitive user experience. I'm passionate about writing clean, maintainable code and collaborating with teams to bring ideas to life. I continuously explore new technologies to stay ahead of trends and deliver innovative solutions.</p>
             
             <div className="icons">
                 <img src={logo1} alt="Logo" />
