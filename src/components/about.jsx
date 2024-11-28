@@ -1,6 +1,5 @@
 import '../components/styles/about.css';
-import logo from '../components/styles/ux-ui-logo.png';
-import logo1 from '../components/styles/logo.png';
+import logo1 from '../components/styles/logo.png'
 import html from '../components/styles/html.png';
 import css from '../components/styles/css.png';
 import js from '../components/styles/js.png';
@@ -14,28 +13,18 @@ export default function About() {
         <>
             <div className="about">
                 <h1>ABOUT ME</h1>
-                <p>I'm a self-taught Full Stack developer  who loves creating beautiful and functional websites. I’m always eager to learn new techniques and technologies to improve my skills and deliver exceptional web experiences.</p>
-            <div className="card-container">
-                <div className="card">
-                    <h1>UI Designing</h1>
-                    <img src={logo} alt="logo" />
-                    <p>As a UI/UX designer, I love making websites and apps that are easy to use and look great. I start by finding out what users want through research. Then, I create and improve prototypes to keep things simple and intuitive. By working closely with teams, I ensure our designs are built well, so users have a great experience.</p>
-                </div>
-                <div className="card">
-                    <h1>Web development</h1>
-                    <img src={logo1} alt="logo1" />
-                    <p>As a web developer, I build and maintain websites and web apps using HTML, CSS, and JavaScript for the structure, style, and functionality. I work on both the frontend and backend. My tasks involve designing user interfaces, making sure websites work well on all devices, improving performance, and adding features that enhance the user experience.</p>
-                </div>
-            </div>
+                <p>I'm a self-taught Full Stack developer who loves creating beautiful and functional websites. I’m always eager to learn new techniques and technologies to improve my skills and deliver exceptional web experiences. With experience in the MERN stack (MongoDB, Express, React, Node.js), I specialize in building dynamic, high-performance web applications. I have a strong focus on both frontend and backend development, ensuring seamless integration and an intuitive user experience. I'm passionate about writing clean, maintainable code and collaborating with teams to bring ideas to life. I continuously explore new technologies to stay ahead of trends and deliver innovative solutions.</p>
+            
             <div className="icons">
-                <img src={html} alt="html" />
+                <img src={logo1} alt="Logo" />
+                {/* <img src={html} alt="html" />
                 <img src={css} alt="css" />
                 <img src={js} alt="js" />
                 <img src={php} alt="php" />
                 <img src={react} alt="react" />
                 <img src={node} alt="node" />
                 <img src={mongo} alt="mongo" />
-                <img src={sql} alt="sql" />
+                <img src={sql} alt="sql" /> */}
             </div>
             </div>
 

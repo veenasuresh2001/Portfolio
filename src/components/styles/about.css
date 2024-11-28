@@ -22,13 +22,16 @@
     animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
 }
 
+
+
 .about p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #f1f1f1; /* Paragraph color */
-    max-width: 800px;
-    padding: 0 20px;
+    max-width: 100%;
+    padding: 0 300px;
     opacity: 0;
+    margin-top: 10px;
     transform: translateY(20px);
     animation: fadeInSlideUp 1s ease-in-out forwards 0.5s; /* Fade-in slide-up animation */
 }
@@ -45,14 +48,11 @@
 }
 
 .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 400px;
     flex: 1;
-    text-align: center;
     transition: transform 0.2s ease;
     box-sizing: border-box; /* Include padding in width/height calculations */
 }
@@ -82,18 +82,16 @@
 
 /* Icon container styles */
 .icons {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
-    gap: 15px; /* Space between icons */
     margin-top: 30px; /* Space above the icons */
-    padding: 0 20px; /* Ensure padding is applied */
-    box-sizing: border-box; /* Include padding in width/height calculations */
 }
 
 .icons img {
-    width: 50px; /* Set size of icons */
-    height: 50px; /* Ensure icons are square */
+    width: 50%; /* Set size of icons */
+    height: 100%; /* Ensure icons are square */
+    margin-top: 40px;
+    border-radius: 50px;
     object-fit: cover; /* Ensure icons maintain aspect ratio */
     transition: transform 0.2s ease;
 }
@@ -135,8 +133,8 @@
     }
 
     .icons img {
-        width: 40px; /* Adjust size for smaller screens */
-        height: 40px;
+        width: 50%; /* Adjust size for smaller screens */
+        height: 100%;
     }
 }
 
