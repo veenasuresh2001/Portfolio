@@ -133,7 +133,7 @@
     }
 
     .icons img {
-        width: 50%; /* Adjust size for smaller screens */
+        width: 60%; /* Adjust size for smaller screens */
         height: 100%;
     }
 }
@@ -149,8 +149,8 @@
     }
 
     .icons img {
-        width: 30px; /* Further adjust size for very small screens */
-        height: 30px;
+        width: 80%; /* Further adjust size for very small screens */
+        height: 100%;
     }
 
     .about {
