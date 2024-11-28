@@ -1,21 +1,24 @@
+/* General Container Styling */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: #6e8efb;
     color: white;
     font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 0 20px;
 }
 
+/* Heading Styles */
 h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 3rem; /* Default font size for large screens */
     font-weight: bold;
     letter-spacing: 2px;
+    line-height: 1.2;
 }
 
 h1:first-of-type {
@@ -28,20 +31,27 @@ h1:last-of-type {
     margin-top: 0.5rem;
     opacity: 0;
     transform: translateY(20px);
-    animation: slideUp 1s ease-in-out forwards 0.5s; 
+    animation: slideUp 1s ease-in-out forwards 0.5s;
+}
+h2{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+/* Paragraph Styling */
 .container p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #f1f1f1; 
-    max-width: 800px; 
-    padding: 0 20px; 
-    opacity: 0; 
-      transform: translateY(20px); 
-          animation: fadeInSlideUp 1s ease-in-out forwards 1s; 
+    color: #f1f1f1;
+    max-width: 800px;
+    padding: 0 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1s ease-in-out forwards 1s;
 }
 
+/* Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -73,26 +83,42 @@ h1:last-of-type {
     }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.5rem; 
+        font-size: 2.5rem; /* Reduce font size on smaller screens */
     }
 
     h1:first-of-type {
-        font-size: 2rem; 
+        font-size: 2rem; /* Even smaller font for first h1 on mobile */
+    }
+
+    /* Adjusting the spacing between elements */
+    .container {
+        padding: 0 15px;
+    }
+
+    .container p {
+        font-size: 1.1rem; /* Adjust paragraph font size */
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 2rem; 
+        font-size: 2rem; /* Even smaller font size for mobile */
     }
 
     h1:first-of-type {
-        font-size: 1.5rem; 
+        font-size: 1.5rem; /* Smaller font size for very small screens */
     }
 
     .container {
-        padding: 0 10px; 
+        padding: 0 10px; /* Reduced padding on extra small screens */
+    }
+
+    .container p {
+        font-size: 1rem; /* Smaller font size on extra small screens */
+        padding: 0 10px;
     }
 }

@@ -20,13 +20,22 @@ export default function Navbar() {
     };
 
     return (
-        <div className={`nav ${isActive ? 'active' : ''}`}>
-            <p><img src={letter} alt="Letter V" /></p>
-            <Link to="home" smooth={true} duration={500} onClick={toggleNav}>Home</Link>
-            <Link to="about" smooth={true} duration={500} onClick={toggleNav}>About</Link>
-            <Link to="projects" smooth={true} duration={500} onClick={toggleNav}>Projects</Link>
-            <Link to="contact" smooth={true} duration={500} onClick={toggleNav}>Contact</Link>
-            <button onClick={handleResumeDownload}>Resume</button>
+        <div className="nav-container">
+            <div className="nav">
+                <p>
+                    <img src={letter} alt="Letter V" />
+                </p>
+                <button className="hamburger" onClick={toggleNav} aria-label="Toggle menu">
+                    &#9776; {/* Hamburger icon */}
+                </button>
+            </div>
+            <div className={`nav-links ${isActive ? 'active' : ''}`}>
+                <Link to="home" smooth={true} duration={500} onClick={toggleNav}>Home</Link>
+                <Link to="about" smooth={true} duration={500} onClick={toggleNav}>About</Link>
+                <Link to="projects" smooth={true} duration={500} onClick={toggleNav}>Projects</Link>
+                <Link to="contact" smooth={true} duration={500} onClick={toggleNav}>Contact</Link>
+                <button onClick={handleResumeDownload}>Resume</button>
+            </div>
         </div>
     );
 }

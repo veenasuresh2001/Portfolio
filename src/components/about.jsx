@@ -14,10 +14,10 @@ export default function About() {
         <>
             <div className="about">
                 <h1>ABOUT ME</h1>
-                <p>I'm a self-taught web developer and MCA graduate who loves creating beautiful and functional websites. I’m always eager to learn new techniques and technologies to improve my skills and deliver exceptional web experiences.</p>
+                <p>I'm a self-taught Full Stack developer  who loves creating beautiful and functional websites. I’m always eager to learn new techniques and technologies to improve my skills and deliver exceptional web experiences.</p>
             <div className="card-container">
                 <div className="card">
-                    <h1>UI/UX Designing</h1>
+                    <h1>UI Designing</h1>
                     <img src={logo} alt="logo" />
                     <p>As a UI/UX designer, I love making websites and apps that are easy to use and look great. I start by finding out what users want through research. Then, I create and improve prototypes to keep things simple and intuitive. By working closely with teams, I ensure our designs are built well, so users have a great experience.</p>
                 </div>

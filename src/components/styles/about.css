@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Background gradient */
+    background:  #6e8efb; /* Background gradient */
     min-height: 100vh; /* Ensure background covers the entire viewport height */
     color: white;
     font-family: 'Arial', sans-serif;
