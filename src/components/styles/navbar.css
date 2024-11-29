@@ -16,8 +16,8 @@ body {
     align-items: center;
     padding: 20px 30px;
     background-color: #333;
-    position: sticky;  /* Makes the navbar sticky */
-    top: 0;  /* Sticks the navbar to the top */
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Sticks the navbar to the top */
     z-index: 100;
     color: white;
 }
@@ -77,8 +77,8 @@ body {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav {
-      justify-content: space-between;
-      width: 100%;
+        justify-content: space-between;
+        width: 100%;
     }
 
     /* Show the hamburger menu on mobile */
@@ -89,8 +89,8 @@ body {
 
     /* Navigation Links on mobile */
     .nav-links {
-        display: none;  /* Hide nav links by default */
-        flex-direction: column;
+        display: none; /* Hide nav links by default */
+        flex-direction: column; /* Column layout for mobile */
         gap: 15px;
         background-color: #333;
         position: absolute;
@@ -99,16 +99,18 @@ body {
         padding: 10px 15px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        width: calc(100% - 40px); /* Adjust width for padding */
     }
 
     /* Active state of nav-links when menu is opened */
     .nav-links.active {
-        display: block;
+        display: flex; /* Flex to show links */
+        flex-direction: column; /* Ensure links are in column layout */
         position: absolute;
         top: 70px;
         right: 0;
         background-color: #333;
-        width: 100%;
+        width: 100%; /* Full-width for mobile */
         padding: 20px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
